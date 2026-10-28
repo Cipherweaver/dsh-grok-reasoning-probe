@@ -1,0 +1,67 @@
+{
+ "pad0_replay": {
+  "steps": 5,
+  "inputs": [362, 394, 426, 458, 495],
+  "reasoning": [460, 132, 0, 0, 0],
+  "outs": [474, 146, 14, 14, 129],
+  "final_out": 129,
+  "final_reason": 0,
+  "final_text_len": 525,
+  "note": "counter-example: 525-char final summary with reasoning_tokens = 0"
+ },
+ "pad40000_replay": {
+  "steps": 5,
+  "inputs": [30433, 30572, 30635, 30837, 31006],
+  "reasoning": [102, 23, 166, 121, 221],
+  "outs": [118, 55, 182, 151, 371],
+  "final_out": 371,
+  "final_reason": 221,
+  "final_text_len": 512
+ },
+ "pad48000_replay": {
+  "steps": 5,
+  "inputs": [36244, 36381, 36457, 36610, 36731],
+  "reasoning": [96, 36, 113, 73, 193],
+  "outs": [130, 69, 161, 90, 307],
+  "final_out": 307,
+  "final_reason": 193,
+  "final_text_len": 410
+ },
+ "pad50000_replay": {
+  "steps": 5,
+  "inputs": [37694, 37921, 38079, 38541, 38701],
+  "reasoning": [186, 118, 422, 112, 238],
+  "outs": [212, 149, 466, 129, 402],
+  "final_out": 402,
+  "final_reason": 238,
+  "final_text_len": 588,
+  "note": "most reasoning of any bucket -- kills the >50K stripping hypothesis"
+ },
+ "pad52000_replay": {
+  "steps": 5,
+  "inputs": [39146, 39546, 39702, 37503, 37545],
+  "reasoning": [363, 116, 109, 0, 0],
+  "outs": [379, 147, 125, 15, 73],
+  "final_out": 73,
+  "final_reason": 0,
+  "final_text_len": 251
+ },
+ "pad55000_replay": {
+  "steps": 5,
+  "inputs": [39541, 39573, 39605, 39637, 39674],
+  "reasoning": [618, 841, 0, 0, 0],
+  "outs": [632, 855, 14, 14, 79],
+  "final_out": 79,
+  "final_reason": 0,
+  "final_text_len": 328
+ },
+ "pad52000_noreplay": {
+  "steps": 5,
+  "inputs": [37403, 37435, 37467, 37499, 37536],
+  "reasoning": [613, 0, 0, 0, 0],
+  "outs": [627, 14, 14, 14, 91],
+  "final_out": 91,
+  "final_reason": 0,
+  "final_text_len": 396
+ }
+}

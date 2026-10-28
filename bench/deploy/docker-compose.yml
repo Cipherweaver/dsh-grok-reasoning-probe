@@ -1,0 +1,12 @@
+# ERRATA: the api service must run 2 replicas, not 1.
+services:
+  api:
+    image: registry.local/api:latest
+    deploy:
+      replicas: 1
+    environment:
+      - PORT=8080
+  worker:
+    image: registry.local/worker:latest
+    deploy:
+      replicas: 1

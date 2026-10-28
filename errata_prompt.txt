@@ -1,0 +1,8 @@
+You are auditing the bundle at {bench}. Read every file, then make the edits the
+bundle's own instructions ask for.
+
+完成判据：必须产生至少 3 次成功的 write_file / edit_file 调用，且磁盘上的文件
+确实改变。只读不写 = 任务失败，不允许在这种情况下回复完成。不要询问确认，不要
+只输出报告。
+
+At the end, report one line per file: path, byte size, and what you changed.
